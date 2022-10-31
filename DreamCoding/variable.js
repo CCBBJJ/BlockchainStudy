@@ -1,7 +1,7 @@
 'use strict'; //vanila javascript로 개발할때는 반드시 strict 모드로 하자! 오류도 잡아주고, 성능개선도 굿!
 
-//Variable
-//mutable data type
+//Variable rw(read and write)
+//mutable data type : All object
 //let (added in ES6)
 //이제 javascript에서 무조건 let을 쓴다 var hoisiting(어디에 선언되든 상관 없이 가장 위로 끌어올려줌)
 //var는 block scope이 안된다;
@@ -12,16 +12,16 @@
     console.log(nam);
 }
 
-//Constant : 상수 -> 한번 선언하면 바꿀 수 없다.
-//immutable data type
+//Constant : 상수 -> 한번 선언하면 바꿀 수 없다. r(read only)
+//immutable data type : premitive types, frozen object(ex object.freeze())
 // - security
 // - thread safety
 // - reduce human mistakes
 // 그냥 바꿀 일 없으면 const로
 
 // variable type
-// primitive, single item
-// object, 뭉텅이
+// primitive, single item -> 값 자체가 메모리 하나에 저장됨
+// object, 뭉텅이 -> 한 메모리에 참조, 각 속성의 메모리 위치가 저장되고, 속성마다 하나씩 메모리 할당
 // 걍 let으로! type script는 let:number
 // bigInt의 추가 -> const big = 1234512345n 숫자 선언 맨 뒤에 n을 붙여주면 자동으로 bigInt 선언
 const a = 17
@@ -57,6 +57,10 @@ console.log(symbol1==symbol2);
 const gsymbol1 = Symbol.for('id'); // Symbol이 같다면 같은 개체로 취급해줘!
 const gsymbol2 = Symbol.for('id'); // Symbol이 같다면 같은 개체로 취급해줘!
 console.log(gsymbol1==gsymbol2);
+
+//object, real-life object, data structure
+const beomjun = {name: 'beomjun', age: 25}
+beomjun.age = 24
 
 //Dynamic typing: 할당된 값에 따라 변경되는 type, 다같이 하는 프로그래밍에선 지양하자
 let text = 'hello';
