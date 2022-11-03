@@ -96,4 +96,6 @@ rectangle.draw();
 triangle.getArea();
 
 // 6. Class checking: instanceOf
-console.log(rectangle instanceof Rectangle);
+console.log(rectangle instanceof Rectangle); // true
+console.log(rectangle instanceof Shape); // true
+console.log(rectangle instanceof Object); // true javascript의 모든 object는 Object의 상속이다 

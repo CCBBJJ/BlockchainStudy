@@ -6,3 +6,4 @@
 - DreamCdoing JavaScript 4 _2022.10.31_
 - DreamCoding JavaScript 5 _2022.11.01_
 - DreamCoding JavaScript 6 _2022.11.02_
+- DreamCoding JavaScript 7 _2022.11.03_
