@@ -5,7 +5,7 @@
 
 //1. Literals and Properties
 
-function print(person){
+function printd(person){
     console.log(person.name);
     console.log(person.age);
 }
